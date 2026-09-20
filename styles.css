@@ -203,14 +203,17 @@ h1 em, h2 em, h3 em { color: var(--accent); font-family: var(--serif); font-weig
 .price-line del { color: #8aa0b3; font-family: var(--mono); font-size: 11px; letter-spacing: .04em; }
 .program-card-alt .price-line del { color: #496f8b; }
 .price-value { font-size: 25px; font-weight: 600; letter-spacing: -.05em; }
-.discount-badge { background: var(--accent); color: var(--ink); font-family: var(--mono); font-size: 8px; letter-spacing: .08em; padding: 5px 7px; text-transform: uppercase; }
-.program-card-alt .discount-badge { background: var(--ink); color: var(--accent); }
+.discount-badge { background: var(--accent); color: #fff; font-family: var(--mono); font-size: 8px; letter-spacing: .08em; padding: 5px 7px; text-transform: uppercase; }
+.program-card-alt .discount-badge { background: var(--accent); color: #fff; }
 .price-note { color: #9bb0c0; font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
 .program-card-alt .price-note { color: #496f8b; }
-.program-link { border-top: 1px solid rgba(236,238,231,.2); display: flex; font-family: var(--mono); font-size: 9px; justify-content: space-between; letter-spacing: .11em; padding-top: 17px; text-transform: uppercase; }
-.program-card-alt .program-link { border-top-color: rgba(17,19,16,.22); }
-.program-link span { color: var(--accent); font-size: 16px; }
-.program-card-alt .program-link span { color: var(--ink); }
+.program-link { align-items: center; background: var(--accent); color: #fff; display: flex; font-family: var(--mono); font-size: 9px; justify-content: space-between; letter-spacing: .11em; padding: 14px 16px; text-transform: uppercase; transition: background .2s ease, transform .2s ease; }
+.program-link:hover { background: #d87973; transform: translateY(-2px); }
+.program-link span { color: #fff; font-size: 16px; }
+.inquiry-action { display: flex; justify-content: center; margin: 34px auto 0; }
+.inquiry-button { align-items: center; background: var(--accent-deep); color: #fff; display: inline-flex; font-family: var(--mono); font-size: 10px; gap: 26px; letter-spacing: .12em; padding: 15px 24px; text-transform: uppercase; transition: background .2s ease, transform .2s ease; }
+.inquiry-button:hover { background: #3d7fae; transform: translateY(-2px); }
+.inquiry-button span { font-size: 17px; }
 
 .method { padding-bottom: 120px; padding-top: 105px; }
 .method-grid { display: grid; gap: 10vw; grid-template-columns: .9fr 1fr; margin: 90px auto 0; max-width: 1150px; }
