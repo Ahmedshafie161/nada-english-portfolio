@@ -105,7 +105,7 @@ h1 em, h2 em, h3 em { color: var(--accent); font-family: var(--serif); font-weig
 .quote-mark { color: var(--accent-deep); font-family: var(--serif); font-size: 50px; left: 21px; line-height: .4; position: absolute; top: -3px; }
 .quote-card p { font-family: var(--serif); font-size: 20px; line-height: 1.25; margin: 10px 0 19px 36px; }
 .quote-credit { color: #667b8d; font-family: var(--mono); font-size: 9px; letter-spacing: .1em; margin-left: 36px; text-transform: uppercase; }
-.about-copy { color: #4b6074; max-width: 505px; padding-top: 29px; }
+.about-copy { color: #4b6074; max-width: 505px; padding-top: 125px; }
 .about-copy p { margin-bottom: 24px; }
 .about-copy .lead-copy { color: var(--ink); font-family: var(--serif); font-size: 25px; line-height: 1.32; }
 .arrow-link { border-bottom: 1px solid var(--ink); display: inline-flex; font-family: var(--mono); font-size: 10px; gap: 26px; letter-spacing: .13em; margin-top: 17px; padding-bottom: 9px; text-transform: uppercase; }
