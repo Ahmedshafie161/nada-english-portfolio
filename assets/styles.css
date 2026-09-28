@@ -39,7 +39,7 @@ button { cursor: pointer; }
 
 .hero { background: #0d2945; min-height: 880px; overflow: hidden; padding-top: 140px; position: relative; }
 .hero::after { background: linear-gradient(90deg, rgba(13,41,69,.95) 0%, rgba(13,41,69,.73) 43%, rgba(13,41,69,.2) 100%), linear-gradient(0deg, rgba(13,41,69,.78) 0%, rgba(13,41,69,.05) 60%); content: ""; inset: 0; pointer-events: none; position: absolute; z-index: 1; }
-.hero-bg-image { filter: grayscale(1) contrast(1.12); height: 100%; inset: 0; object-fit: cover; object-position: 58% 22%; opacity: .68; pointer-events: none; position: absolute; width: 100%; z-index: 0; }
+.hero-bg-image { filter: grayscale(1) contrast(1.12); height: 100%; inset: 0; object-fit: cover; object-position: 70% 22%; opacity: .68; pointer-events: none; position: absolute; width: 100%; z-index: 0; }
 .hero-grid { align-items: center; display: block; margin: 0 auto; max-width: 1400px; min-height: 650px; }
 .hero-copy { max-width: 790px; padding-top: 80px; position: relative; z-index: 2; }
 .eyebrow { color: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .18em; margin: 0 0 25px; text-transform: uppercase; }
@@ -105,7 +105,7 @@ h1 em, h2 em, h3 em { color: var(--accent); font-family: var(--serif); font-weig
 .quote-mark { color: var(--accent-deep); font-family: var(--serif); font-size: 50px; left: 21px; line-height: .4; position: absolute; top: -3px; }
 .quote-card p { font-family: var(--serif); font-size: 20px; line-height: 1.25; margin: 10px 0 19px 36px; }
 .quote-credit { color: #667b8d; font-family: var(--mono); font-size: 9px; letter-spacing: .1em; margin-left: 36px; text-transform: uppercase; }
-.about-copy { color: #4b6074; max-width: 505px; padding-top: 155px; }
+.about-copy { color: #4b6074; max-width: 505px; padding-top: 190px; }
 .about-copy p { margin-bottom: 24px; }
 .about-copy .lead-copy { color: var(--ink); font-family: var(--serif); font-size: 25px; line-height: 1.32; }
 .arrow-link { border-bottom: 1px solid var(--ink); display: inline-flex; font-family: var(--mono); font-size: 10px; gap: 26px; letter-spacing: .13em; margin-top: 17px; padding-bottom: 9px; text-transform: uppercase; }
