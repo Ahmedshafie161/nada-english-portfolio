@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course application — Nada Hatem</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body class="booking-page">
+  <main class="booking-shell">
+    <a class="booking-back" href="index.html#ielts">← Back to courses</a>
+    <section class="booking-card" aria-labelledby="booking-title">
+      <p class="eyebrow">Course application</p>
+      <h1 id="booking-title">Start your <em>next chapter.</em></h1>
+      <p class="booking-intro">Tell Nada about your goal and she will follow up with the best next step for your preparation.</p>
+      <form class="application-form" id="application-form">
+        <input type="hidden" name="course" id="application-course" />
+        <div class="form-grid">
+          <label>Name<input name="name" type="text" required autocomplete="name" /></label>
+          <label>Age<input name="age" type="number" min="10" max="100" required /></label>
+          <label>Education<input name="education" type="text" required /></label>
+          <label>Target score<input name="target-score" type="text" required /></label>
+          <label>Target period
+            <select name="target-period" required>
+              <option value="1 month">1 month</option>
+              <option value="2 months">2 months</option>
+              <option value="3 months or more">3 months or more</option>
+            </select>
+          </label>
+          <label id="ielts-type-field">IELTS type
+            <select name="ielts-type">
+              <option value="General">General</option>
+              <option value="Academic">Academic</option>
+            </select>
+          </label>
+        </div>
+        <label>Placement test screenshot<input name="placement-test" type="file" accept="image/*" /></label>
+        <p class="upload-note">Upload a screenshot of your placement test, if available.</p>
+        <button class="button button-primary" type="submit">Send application <span aria-hidden="true">↗</span></button>
+        <p class="application-status" id="application-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <script src="booking.js"></script>
+</body>
+</html>

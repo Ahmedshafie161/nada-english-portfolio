@@ -23,7 +23,11 @@ document.querySelectorAll('[data-program-card]').forEach((card) => {
         item.classList.toggle('active', active);
         item.setAttribute('aria-selected', String(active));
       });
-      card.querySelector('.duration-label').textContent = tab.dataset.duration === '3-months' ? '3 months' : '1 month';
+      const isThreeMonths = tab.dataset.duration === '3-months';
+      card.querySelector('.duration-label').textContent = isThreeMonths ? '3 months' : '1 month';
+      card.querySelector('.original-price').textContent = isThreeMonths ? '15,000 EGP' : '5,000 EGP';
+      card.querySelector('.price-value').textContent = isThreeMonths ? '10,000 EGP' : '4,000 EGP';
+      card.querySelector('.discount-badge').textContent = isThreeMonths ? '33% OFF' : '20% OFF';
     });
   });
 });
