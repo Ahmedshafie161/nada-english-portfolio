@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Placement test — Nada Hatem</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="placement-test.css" />
+</head>
+<body class="placement-page">
+  <main class="test-shell">
+    <a href="index.html" class="test-back">← Back to Nada’s website</a>
+    <header>
+      <p class="test-kicker">Find your starting point</p>
+      <h1>English <em>placement test.</em></h1>
+      <p>Complete the grammar, reading and listening questions. Use the audio player in each listening part. When you finish, take a screenshot of your result to upload with your course application.</p>
+      <p>This practice assessment helps Nada review your starting point; it is not an official IELTS, TOEFL or CEFR score.</p>
+    </header>
+    <p id="load-status" role="status">Loading your test…</p>
+    <noscript>Please enable JavaScript to complete this test.</noscript>
+    <form id="placement-form" hidden>
+      <label class="name-label" for="student-name">Your name (optional)</label>
+      <input id="student-name" name="student-name" autocomplete="name" maxlength="100" />
+      <div id="test-sections"></div>
+      <button class="test-button" type="submit">Show my result</button>
+    </form>
+    <section id="test-result" class="result-card" aria-labelledby="result-title" tabindex="-1" hidden>
+      <h2 id="result-title">Your placement test result</h2>
+      <p id="result-name"></p>
+      <p id="result-score" class="result-score"></p>
+      <div id="result-breakdown"></div>
+      <p>Take a screenshot of this result and attach it to your course application. Your answers and result are not automatically sent or saved.</p>
+      <a class="test-button" href="booking.html?course=ielts">Apply for IELTS</a>
+      <a class="test-button secondary" href="booking.html?course=toefl">Apply for TOEFL</a>
+    </section>
+  </main>
+  <script src="placement-test.js"></script>
+</body>
+</html>
